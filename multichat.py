@@ -6,6 +6,7 @@ load_dotenv()
 from anthropic import Anthropic
 
 
+# for user message to api
 def add_user_message(messages, text):
     messages.append({"role": "user", "content": text})
 
