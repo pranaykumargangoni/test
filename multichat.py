@@ -1,5 +1,6 @@
 from pyexpat.errors import messages
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
 
