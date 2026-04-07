@@ -31,7 +31,9 @@ system = """You are a patient math tutor.
 You will be given a math problem and you will explain the solution step by step in a way that a 10 year old can understand.
 You will also provide the final answer to the problem at the end of your explanation."""
 while True:
-    user_input = input("Enter a math problem: ")
+    user_input = input(
+        "I am your math tutor. Enter a math problem, I will help you solve it: "
+    )
     user_message(messages, user_input)
     answer = chat(messages)
     assistant_message(messages, answer)
